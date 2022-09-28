@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="viewpage" class="container show">
+            <div class="heading">
+                <label>LIST CUSTOMER</label>
+            </div>
+            <div class="content">
+                <table style="width:100%" id="viewtable">
+                    <thead>
+                        <tr>
+                            <td colspan="3">
+                                <div class="header-container">
+                                    <div class="cust-col">Customer</div>
+                                    <div class="stat-col">Status</div>
+                                    <div class="act-col">Actions</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <button class="prevnext" data-page="1" ><</button>
+                    <button class="active" data-page="1" >1</button>
+                    <button data-page="2">2</button>
+                    <button data-page="3">3</button>
+                    <button data-page="4">4</button>
+                    <button data-page="5">5</button>
+                    <button class="prevnext" data-page="2">></button>
+                </div>
+            </div>
+        </div>
+        <div id="detailpage" class="container hide">
+            <div class="heading">
+                <label>CUSTOMER DETAILS</label>
+            </div>
+            <div class="content">
+                <div class="row-container">
+                    <div class="column2">
+                        <input type="hidden" id="id_cust" value=""/>
+                        <div class="detail-group">
+                            <label>Full Name</label>
+                            <br>
+                            <span class="info-col" id="fullname"></span>
+                        </div>
+                        <div class="detail-group">
+                            <label>AccountID</label>
+                            <br>
+                            <span class="info-col" id="accountid"></span>
+                        </div>
+                        <div class="detail-group">
+                            <label>Gender</label>
+                            <br>
+                            <span class="info-col" id="gender"></span>
+                        </div>
+                        <div class="detail-group">
+                            <label>Email</label>
+                            <br>
+                            <span class="info-col" id="email"></span>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="detail-group">
+                            <label>Status Account</label>
+                            <br>
+                            <span id="status"></span>
+                        </div>
+                        <div class="button-group"style="margin-top:320px">
+                            <button class="return-btn" type="button" id="return">RETURN TO LIST CUSTOMER</button>
+                            <button class="delete-btn" type="button" id="delete">DELETE CUSTOMER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
